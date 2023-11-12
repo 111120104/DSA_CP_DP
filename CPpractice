@@ -1,0 +1,31 @@
+//https://codeforces.com/contest/514/problem/A
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	long long n; cin>>n;
+	long long x = n;
+	stack<char> st;
+	string s = to_string(n);
+	string temp = "";
+	while(x > 0){
+	    if(x != 9){
+	    if(x%10 > 4)
+	    st.push('0' + (9-x%10));
+	    else st.push('0' + x%10);
+	    x /= 10;
+	    }
+	    else{ 
+	        st.push('0' +9);
+	        x /= 10;
+	    }
+	}
+	while(st.empty() == false){
+	    temp += st.top();
+	    st.pop();
+	}
+	long long res = stoll(temp);
+	cout<<res;
+	return 0;
+}
