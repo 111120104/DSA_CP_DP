@@ -1,0 +1,15 @@
+//https://codeforces.com/problemset/problem/151/A
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int n,k,l,c,d,p,nl,np;
+	cin>>n>>k>>l>>c>>d>>p>>nl>>np;
+	int totalToasts_drink = k*l/nl;
+	int totalToasts_slices = c*d;
+	int totalToasts_salt = p/np;
+	if(totalToasts_salt >= totalToasts_slices)
+	cout<<min( totalToasts_slices,totalToasts_drink)/n;
+	else cout<<min(totalToasts_drink,totalToasts_salt)/n;
+	return 0;
+}
