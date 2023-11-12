@@ -1,6 +1,13 @@
-//https://codeforces.com/contest/514/problem/A
-
-
+/*
+https://codeforces.com/contest/514/problem/A
+you will learn how to convert 
+integer to string-- to_string
+string to integer-- stoi
+string to long long--stoll
+storing capacity of int & long long data type
+how to convert int digit to character digit(i.e 9 to '9'  '0'+9='9')
+NOTE[basic things like int,long long,string->integer,int->string,int to character,ASCII stuff]
+*/
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
