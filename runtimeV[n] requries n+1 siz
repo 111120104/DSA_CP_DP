@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+    int n; cin>>n;
+    vector<int> v(n+1); vector<int> V(n+1);// if we take n instead n+1 runtime error comes 
+                                           //because of 1 based indexing we need v[n] so n+1
+    
+    for(int i = 1; i <= n; i++){
+        cin>>v[i]; V[v[i]] = i;
+    }
+    
+    for(int k = 1; k <= n; k++)
+    cout<<V[k]<<" ";
+	return 0;
+}
